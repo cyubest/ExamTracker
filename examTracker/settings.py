@@ -159,8 +159,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 ALLOWED_HOSTS = ['192.168.8.100', 'localhost',
-                 '127.0.0.1', '192.168.1.164', '192.168.100.30', '192.168.1.85', '192.168.0.101', '192.168.8.101', '192.168.0.102', '192.168.0.101', 'exam-seating-app.herokuapp.com']
+                 '127.0.0.1', '192.168.1.164', '192.168.100.30', '192.168.1.85', '192.168.0.101', '192.168.8.101', '192.168.0.102', '192.168.0.101', 'exam-app-fafa.herokuapp.com']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',),
 }
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
